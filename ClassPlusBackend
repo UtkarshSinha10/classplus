@@ -124,11 +124,19 @@ int main()
 }
 
 
+3. Describe JS execution Stack and Event Loop functionality.
+Solution- 
+Javascript functions executes using stack and loop funcitonality. JS uses asynchronous functions and callbacks. To maintain the order of execution it uses stact and event loop funcitonality.
+Call stack maintains the order as it follows Last In First Out rule. The top most funciton is executed and when finished poped out from the call stack 
+Event loop is a continous loop which constantly check the task queue. Whenever it finds a call stack empty if send the function from task queue for its execution.
+
+
 4.  Difference between var , let and const.
 Solution-
 var - These variable are funcitonal scoped. Var which are defined for for loop and conditions are converted to global variables. Variables can be reassigned.
 let - There variables have funcitonal as well as block scope. Their value can be chaged within the block scope. Variables can be reassigned.
 const - These variables have funcitonal as well as block scope but their value remains constant and cannot be changed i.e. reassignment is not possible.
+
 
 5. Mysql ->  Difference between INT(10) and tinyint(2)
 Solution-
