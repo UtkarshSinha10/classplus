@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   async api1Call(page, endReached = false) {
-    const api1 = 'https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=482727d1943be8e9d7ce72873bc6a2c2&page=' + page + '&format=json&nojsoncallback=1';
+    const api1 = 'https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=XXXXXXXXXXXXXXXXXXXXXX&page=' + page + '&format=json&nojsoncallback=1';
     fetch(api1)
       .then(res => {
         return res.json();
@@ -42,7 +42,7 @@ class App extends Component {
 
   async api2Call(query, page, endReached = false) {
     await this.setState({ searchValue: query.trim() }, () => console.log('Search box changed'));
-    const api2 = 'https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=482727d1943be8e9d7ce72873bc6a2c2&text=' + this.state.searchValue + '&page=' + page + '&format=json&nojsoncallback=1';
+    const api2 = 'https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=XXXXXXXXXXXXXXXXXXXXXXXXXXX&text=' + this.state.searchValue + '&page=' + page + '&format=json&nojsoncallback=1';
     fetch(api2)
       .then(res => {
         return res.json();
